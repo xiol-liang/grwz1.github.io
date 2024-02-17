@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My school</title>
+		<meta name="keywords" content="xiongliang,熊亮,个人网页,个人网站,熊亮的个人网页,计算机,做网站,web前端" />
+		<meta name="description" content="这是熊亮的个人网站，主要从事计算机行业，欢迎大家走进我的网站，在这里你将更加了解我" />
+		<!--
+                                                   	作者：2318751031@qq.com
+                                                   	时间：2018-12-19
+                                                   	描述：搜索引擎优化
+                                                   -->
+		<style type="text/css">
+			html,
+			body {
+				margin: 0px;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				font-family: arial;
+				background: rgb(217, 215, 190);
+			}
+
+			#container {
+				margin: 0 auto;
+				/*主要内容的大容器 居中*/
+				width: 1400px;
+				/*大容器宽度为1400px*/
+			}
+
+			#banner {/*banner设置*/
+				/*border: dashed 1px #FFFFFF;*/
+				width: 1400px;
+				height: 350px;
+				background: url(img/yang1.jpg);
+			}
+			#banner div{
+				float: left;
+			}
+			#banner_1{
+				/*border: dashed 1px #000000;*/
+				width: 480px;
+				height: 80px;
+				letter-spacing: 35px;
+				color: rgb(66,170,145);
+				font-family: 华文行楷;
+				font-size: 50px;
+				padding: 20px 0px 0px 0px;
+			}
+			.img {
+				opacity: 0.6;
+			}
+
+			#caidan {
+				/*border: dashed 1px #000000;*/
+				height: 60px;
+				width: 850px;
+				font-size: 24px;
+				/*菜单栏中字体原来的大小*/
+				padding-top: 15px;
+				position: relative;
+				left: 150px;
+				
+			}
+			#ms {
+				border: solid 3px rgb(163, 163, 162);
+				font-size: 60px;
+				color: rgb(241, 141, 0);
+				text-shadow: 1px 1px #FFFFFF;
+				background: rgb(81, 77, 77);
+			}
+
+			#caidan ul {
+				/*菜单栏采用无序列表方式设置*/
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#caidan li {
+				float: left;
+				/*让菜单栏中每一个元素左浮动*/
+				width: 170px;
+			}
+
+			#caidan li a {
+				/*菜单栏中每一个元素的设置*/
+				text-decoration: none;
+				/*border: 1px solid #FFFFFF;*/
+				margin: 0px;
+			}
+
+			#caidan li a:link,
+			#caidan li a:visited {
+				color: #07a690;
+				/*菜单栏的元素访问前和访问后的颜色*/
+			}
+
+			#caidan li a:hover {
+				/*鼠标移上菜单栏上时产生的效果设置*/
+				font-size: 28px;
+				color: rgb(35, 173, 229);
+				text-shadow: 0 0 10px chartreuse;
+			}
+
+			#zhuti {/*主体设置*/
+				/*border: dashed 2px #000000;*/
+				width: 1400px;
+				height: 1540px;
+				background: rgb(159, 159, 160);
+			}
+
+			#zhuti div {
+				float: left;
+			}
+
+			#left {
+				/*border: dashed 1px #000000;*/
+				width: 450px;
+				height: 1540px;
+			}
+
+			#tu {/*图片整体设置*/
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 620px;
+				color: rgb(83, 74, 70);
+				font-size: 25px;
+				font-family: 华文行楷;
+			}
+			#tu img{
+				margin: 0px;
+			}
+
+			#tu a:link,
+			#tu a:visited {
+				color: rgb(83, 74, 70);
+				font-size: 25px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+
+			#tu_ {
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 812px;
+				color: rgb(83, 74, 70);
+				font-size: 25px;
+				font-family: 华文行楷;
+			}
+
+			#fan {
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 70px;
+				padding-top: 30px;
+				/*padding-bottom: 30px;*/
+			}
+
+			#fan a {
+				color: rgb(83, 74, 70);
+				font-size: 40px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+
+			#fan a:hover {
+				color: #ffffff;
+			}
+
+			#right {
+				border: groove 2px rgb(163, 163, 162);
+				width: 942px;
+				height: 1540px;
+				margin-left: 4px;
+			}
+			
+			#right a{
+				text-decoration: none;
+				color: rgb(81,77,77);
+			}
+			#right img{
+				box-shadow: 7px 7px 7px #333333;
+			}
+			#gz{/*高中边框设置*/
+				/*border: dashed 1px #ffffff;*/
+				width: 942px;
+				height: 630px;
+			}
+			#gz div{
+				clear: left;
+			}
+			#gz_1{
+				/*border: dashed 1px #ffffff;*/
+				height: 52px;
+				width:210px;
+				color: rgb(81,77,77);
+				font-family: 华文行楷;
+				font-size: 50px;
+				text-shadow: 0px 0px 15px #ffffff;
+				padding-top: 10px;
+				padding-left: 30px;
+				padding-bottom: 5px;
+			}
+			#gz_2{
+				border: solid 2px #ffffff;
+				border-radius: 30px;
+				width: 935px;
+				height: 545px;
+				padding-bottom: 8px;
+			}
+			#dx{/*大学边框设置*/
+				/*border: dashed 1px #ffffff;*/
+				width: 942px;
+				height: 910px;
+			}
+			#dx div{
+				clear: left;
+			}
+			#dx_1{
+				/*border: dashed 1px #ffffff;*/
+				height: 52px;
+				width:210px;
+				color: rgb(81,77,77);
+				font-family: 华文行楷;
+				font-size: 50px;
+				text-shadow: 0px 0px 15px #ffffff;
+				padding-top: 20px;
+				padding-left: 30px;
+				padding-bottom: 5px;
+			}
+			#dx_2{
+				border: solid 2px #ffffff;
+				border-radius: 30px;
+				width: 935px;
+				height: 815px;
+				padding-bottom: 11px;
+			}
+			span{/*设置发光效果*/
+				text-shadow: 0px 0px 15px #ffffff;
+			}
+
+			p {/*文章设置*/
+				/*border: dashed 1px #000000;*/
+				text-align: justify;
+				font-size: 30px;
+				color: rgb(81, 77, 77);
+			}
+
+			p:hover {
+				color: rgb(81, 77, 77);
+			}
+
+			p.content {
+				/*background-color:rgba(255,255,255,1);*/
+				line-height: 1.2em;
+				margin: 0px;
+				text-indent: 2em;
+				font-family: 华文行楷;
+				padding-top: 20px;
+			}
+
+			img.pic1 {/*图片效果设置*/
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+
+			img.pic2 {/*图片效果设置*/
+				float: right;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+
+			#footer {/*脚注设置*/
+				border: groove 2px rgb(163, 163, 162);
+				height: auto;
+				color: #000000;
+				font-size: 25px;
+				padding-top: 8px;
+				background: rgb(159, 159, 160);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<a name="fanhui">
+			<div id="banner">
+				<div id="banner_1">
+					学习之地
+				</div>
+				<div id="caidan"><!--菜单栏开始-->
+					<ul>
+						<li>
+							<a href="index.html" target="_self"><img src="img/home.png" class="img" /><br>Home</a>
+						</li>
+						<li>
+							<a href="Hometown.html" target="_self"><img src="img/home.png" class="img" /><br>Hometown</a>
+						</li>
+						<li>
+							<a href="My family.html" target="_self"><img src="img/family.png" class="img" /><br>My family</a>
+						</li>
+						<li>
+							<a href="My school.html" target="_self" style="text-shadow:0 0 7px chartreuse"><img src="img/school.png" class="img" /><br>My school</a>
+						</li>
+					</ul>
+				</div><!--菜单栏结束-->
+				
+			</div>
+			</a>
+			<div id="ms">
+				My schools
+			</div>
+			<div id="zhuti"><!--主体开始-->
+				<div id="left"><!--左边开始-->
+					<div id="tu">
+						<img src="img/tu2.jpg">
+						<img src="img/tu3.jpg">
+						<img src="img/tu1.jpg">
+						<br />临中图册
+					</div>
+					<div id="tu_">
+						<img src="img/c1.jpg">
+						<img src="img/c2.jpg">
+						<img src="img/c3.jpg">
+						<img src="img/c4.jpg">
+						<br />重师图册
+					</div>
+					<div id="fan">
+						<a href="#fanhui">返回顶部</a>
+					</div>
+				</div><!--左边结束-->
+				<div id="right"><!--右边开始-->
+					<div id="gz">
+						<div id="gz_1">
+							我的高中
+						</div>
+						<div id="gz_2">
+							<img src="img/gz1.jpg" class="pic2" style="border-radius: 78px;">
+							<p class="content">
+								<span>重庆市开州临江中学</span> 位于渝东北开州千年古镇临江，距城区16公里。学校创办于1956年，原名四川省开县第二中学（简称开二中），系重庆市重点中学。校名先后由郭沫若先生、季羡林先生题写。学校占地230余亩，现有93个教学班，在校学生5500余人，教职工350余人。<img src="img/gz3.jpg" class="pic1" style="border-radius: 30px;">重庆市开州区临江中学师资精良。有正高级教师1人，高级教师78人；有硕士研究生19人；有各级教学名师、骨干教师、专业技术拔尖人才、学术技术带头人64人；荣获各级各类优秀教师和先进教育工作者称号者达186人。<img src="img/gz2.jpg" class="pic2" style="border-radius: 30px;">重庆市开州区临江中学业绩突出。在60年的办学历程中，为高等学府输送了一大批优秀人才，曾两度同时培养出开州区高考文理科状元，有数十人考取北大、清华、浙大、武大等名校。<a href="https://baike.baidu.com/item/%E9%87%8D%E5%BA%86%E5%B8%82%E5%BC%80%E5%B7%9E%E5%8C%BA%E4%B8%B4%E6%B1%9F%E4%B8%AD%E5%AD%A6/22258154?fromtitle=%E9%87%8D%E5%BA%86%E5%B8%82%E5%BC%80%E5%8E%BF%E4%B8%B4%E6%B1%9F%E4%B8%AD%E5%AD%A6&fromid=8995567"><span>了解更多>><span></a>
+							</p>
+						</div>
+					</div>
+					<div id="dx">
+						<div id="dx_1">
+							我的大学
+						</div>
+						<div id="dx_2">
+							<img src="img/dx.jpg" class="pic2" style="border-radius: 156px;">
+							<p class="content">
+								<span>重庆师范大学（Chongqing Normal University）</span>简称“重庆师大”，位于中国直辖市重庆，入选国家首批卓越农林人才教育培养计划和卓越教师培养计划，“马云乡村师范生计划”首批合作院校，<img src="img/dx1.jpg"  class="pic1" style="border-radius: 30px;">是一所以教师教育为特色、多学科协调发展的综合性师范大学。重庆师范大学创办于1954年1月，<img src="img/dx2.jpg"  class="pic2" style="border-radius: 30px;">时名重庆师范专科学校；1960年学校更名为重庆师范学院，同年获得本科专业设置资格；1962年复名为重庆师范专科学校，同时成都师范专科学校并入；1978年再次更名为重庆师范学院。1981年获得学士学位授予权；1986年获得硕士学位授予权。<img src="img/dx3.jpg"  class="pic1" style="border-radius: 30px;">2001年5月，重庆幼儿师范学校、重庆纺织职工大学并入。2003年，学校改为现名；同年9月，重庆市第一师范学校并入。重庆师范大学建有大学城校区、沙坪坝校区和北碚校区，校园总面积2688亩，教学科研仪器设备总值2.233亿元；<img src="img/dx4.jpg"  class="pic2" style="border-radius: 30px;">馆藏纸质图书270余万册、电子图书104万种；下设17个二级学院、1个独立二级学院、70个全日制本科专业（含方向）；其中重庆师范大学计算机与信息科学学院的计算机学科始于80年代，学校于1987年开始招收计算机科学与技术专业的专科生。 <a href="http://www.cqnu.edu.cn/"><span>了解更多>><span></a>
+							</p>
+						</div>
+					</div>
+				</div><!--右边结束-->
+			</div><!--主体结束-->
+			<div id="footer"><!--footer开始-->
+				重庆师范大学计算机与信息科学学院Copyright©2018级计科熊亮 版权所有<br />
+				Tel:15320520630 邮箱:2318751031@qq.com<br />
+				专注于网页制作，只为打造更好更美的网页！
+			</div><!--footer结束-->
+		</div><!--大容器结束-->
+	</body>
+	</html>

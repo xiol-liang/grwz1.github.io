@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My family</title>
+		<meta name="keywords" content="xiongliang,熊亮,个人网页,个人网站,熊亮的个人网页,计算机,做网站,web前端" />
+		<meta name="description" content="这是熊亮的个人网站，主要从事计算机行业，欢迎大家走进我的网站，在这里你将更加了解我" />
+		<!--
+                                                   	作者：2318751031@qq.com
+                                                   	时间：2018-12-19
+                                                   	描述：搜索引擎优化
+                                                   -->
+		<style type="text/css">
+			html,
+			body {/*body整体设置*/
+				margin: 0px;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				font-family: arial;
+				background: rgb(213, 195, 178);
+			}
+
+			#container {
+				margin: 0 auto;
+				/*主要内容的大容器 居中*/
+				width: 1400px;
+				/*大容器宽度为1400px*/
+			}
+
+			#banner {/*banner设置*/
+				/*border: dashed 1px #000000;*/
+				width: 1400px;
+				height: 350px;
+				background: url('img/fa1.jpg');
+			}
+			#banner div{
+				float: left;
+			}
+
+			#jia1 {
+				/*border: dashed 1px #ffffff;*/
+				width: 480px;
+				height: 80px;
+				font-size: 50px;
+				font-family: 华文行楷;
+				color: rgb(243, 152, 57);
+				text-shadow: 0px 0px 10px rgb(247, 186, 129);
+				letter-spacing: 35px;
+				padding: 20px 0px 0px 0px;
+			}
+			#caidan{/*菜单设置*/
+				/*border: dashed 1px #FFFFFF;*/
+				height: 60px;
+				width: 850px;
+				padding-top: 15px;
+				position: relative;
+				left: 150px;
+			}
+
+			#mf {
+				border: solid 3px rgb(163, 163, 162);
+				font-size: 60px;
+				color: rgb(247, 186, 129);
+				text-shadow: 1px 1px #FFFFFF;
+				background: rgb(55, 65, 105);
+			}
+
+			.img {/*让小图片透明*/
+				opacity: 0.3;
+			}
+
+			#navigation {
+				/*菜单栏容器的设置*/
+				/*border: dashed 1px #FFFFFF;*/
+				height: 60px;
+				width: 850px;
+				font-size: 24px;
+			}
+
+			#navigation ul {
+				/*菜单栏采用无序列表方式设置*/
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#navigation li {
+				float: left;
+				/*让菜单栏中每一个元素左浮动*/
+				/*border: dashed 1px #FFFFFF;*/
+				width: 170px;
+			}
+
+			#navigation li a {
+				/*菜单栏中每一个元素的设置*/
+				text-decoration: none;
+				/*border: 1px solid #FFFFFF;*/
+				margin: 0px;
+			}
+
+			#navigation li a:link,
+			#navigation li a:visited {
+				color: rgb(247, 186, 129);
+				/*菜单栏的元素访问前和访问后的颜色*/
+			}
+
+			#navigation li a:hover {
+				/*鼠标移上菜单栏上时产生的效果设置*/
+				font-size: 28px;
+				color: rgb(243, 152, 57);
+				text-shadow: 0px 0px 10px rgb(247, 186, 129);
+			}
+
+			#zhu {/*主体设置*/
+				/*border: dashed 1px #FFFFFF;*/
+				height: auto;
+				background: rgb(182,167,150);
+			}
+
+			#ren {/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-left:solid 3px rgb(233, 203, 153);
+				height: auto;
+			}
+
+			#ren img {/*人物图片设置*/
+				border: solid #FFFFFF 5px;
+				border-radius: 35px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 0.8;
+				margin-right: 30px;
+				text-align: center;
+			}
+
+			#ren img:hover {
+				border: solid rgb(233, 203, 153) 5px;
+				border-radius: 0px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 1;
+			}
+			#ly{
+				border-bottom:solid 3px rgb(233, 203, 153);
+				height: auto;
+				font-size: 50px;
+				color: rgb(81, 77, 77);
+				font-family: 华文行楷;
+			}
+			#ly:hover{
+				color: rgb(83,62,49);
+			}
+			#jiaren{
+				/*border: solid 1px #000000;*/
+				height: auto;
+			}
+			#jiaren img {/*家人图片效果设置*/
+				border-radius: 25px;
+				box-shadow: 7px 7px 7px #333333;
+			}
+			img.pic1 {
+				float: left;
+				margin-right: 20px;
+				margin-left: 10px;
+				margin-bottom: 5px;
+			}
+			img.pic1:hover {
+				transform: rotate(7deg);/*鼠标移上效果*/
+			}
+			
+			img.pic2 {
+				float: right;
+				margin-right: 10px;
+				margin-left: 20px;
+				margin-bottom: 5px;
+			}
+			img.pic2:hover {
+				transform: rotate(-7deg);/*鼠标移上效果*/
+			}
+			p {
+				/*border: dashed 1px #000000;*/
+				text-align: justify;
+				font-size: 50px;
+				color: rgb(81, 77, 77);
+			}
+			
+			p:hover {
+				color: rgb(83,62,49);
+			}
+			
+			p.content {/*文章效果设置*/
+				line-height: 1.2em;
+				margin: 0px;
+				text-indent: 2em;
+				font-family: 华文行楷;
+				padding: 20px 20px 10px 20px;
+			}
+			#ba{
+				border-left:solid 3px rgb(233, 203, 153);/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				height: 440px;
+				/*border: dashed 1px #000000;*/
+				
+			}
+			#ma{
+				border-left:solid 3px rgb(233, 203, 153);/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				height: 500px;
+			}
+			#jie{
+				border-left:solid 3px rgb(233, 203, 153);/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				width:1400px;
+				height: 390px;
+			}
+			#ge{
+				border-left:solid 3px rgb(233, 203, 153);/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				width:1400px;
+				height: 500px;
+			}
+			#fan{
+				border-left:solid 3px rgb(233, 203, 153);/*人物边框设置*/
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				width:1400px;
+				height: auto;
+			}
+			#fan a{
+				color: rgb(81, 77, 77);
+				text-decoration: none;
+				font-size: 50px;
+				font-family: 华文行楷;
+			}
+			#fan a:hover{
+				color: #ffffff;
+			}
+			#footer{/*脚注设置*/
+				border-left:solid 3px rgb(233, 203, 153);
+				border-right:solid 3px rgb(233, 203, 153);
+				border-bottom:solid 3px rgb(233, 203, 153);
+				width:1400px;
+				height: auto;
+				color: rgb(81, 77, 77);
+				font-size: 25px;
+				font-weight: bold;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="container"><!--大容器开始-->
+			<a name="fanhui">
+			<div id="banner">
+				<div id="jia1">
+					温馨之家
+				</div>
+				<div id="caidan">
+					<div id="navigation">
+						<!--菜单栏开始-->
+						<ul>
+							<li>
+								<a href="index.html" target="_self"><img src="img/home.png" class="img" /><br>Home</a>
+							</li>
+							<li>
+								<a href="Hometown.html" target="_self"><img src="img/home.png" class="img" /><br>Hometown</a>
+							</li>
+							<li>
+								<a href="My family.html" target="_self" style="color:rgb(243, 152, 57);"><img src="img/family.png" class="img" /><br>My
+									family</a>
+							</li>
+							<li>
+								<a href="My school.html" target="_self"><img src="img/school.png" class="img" /><br>My
+									school</a>
+							</li>
+						</ul>
+					</div><!--菜单栏结束-->
+				</div>
+			</div>
+			</a>
+			<div id="mf">
+				My family
+			</div>
+			<div id="zhu"><!--主体开始-->
+				<div id="ren">
+					<img src="img/ren1.jpg">
+					<img src="img/ren2.jpg">
+					<img src="img/ren4.jpg">
+					<img src="img/ren3.jpg">
+					<div id="ly">
+						我们家人一起出门旅游时拍的照片
+					</div>
+				</div>
+				<div id="jiaren"><!--家人介绍开始-->
+					<div id="ba">
+					<img src="img/ba.jpg" class="pic1">
+					<p class="content">
+						我爸是一名勤劳务实，不怕吃苦的工人。他为人诚恳，待人和善，他经常教育子女也应如此。他常年在深圳打工，只有过年或者国庆节才会回家与我们团聚。家里面的经济来源基本上靠我爸了，他是家里的顶梁柱。我的生活费全是老爸的血汗钱交的！将来我有出息了，可一定要好好报答老爸呀！
+					</p>
+					</div>
+					<div id="ma">
+					<img src="img/ma.jpg" class="pic2">
+					<p class="content">
+						这是我美丽的老妈，她平时爱笑，好强，什么都会做并且要做好。我妈炒的菜最好吃了，特别是家里有时候来客人了，总是满满的一大桌香喷喷的菜，以前上中学每天的早晚餐也是我妈亲自给我做的，我可喜欢了,现在上大学了，还挺怀恋我妈做的饭呢。除了炒菜做饭，我妈还喜欢跳舞和唱歌，别人都羡慕我妈的多才多艺！
+					</p>
+					</div>
+					<div id="ge">
+					<img src="img/ge.jpg" class="pic1">
+					<p class="content">
+						这个看上去帅帅的，酷酷的男子是不是和我有点像呢？没错，他就是我的亲哥，刚好比我大10岁，现在可是深圳的一名出租车司机呢，对深圳那边的地形非常熟悉，车技也一流。想当初，我来上大学的时候就是我哥亲自开车将我送到学校来的呢。我哥现在已经成家了，有一位美丽的妻子，还有两个可爱的儿子！
+					</p>
+					</div>
+					<div id="jie">
+					<img src="img/jie.jpg" class="pic2">
+					<p class="content">
+						这一位就是我漂亮的姐姐了，我哥的妻子。她人可好了，对我比亲姐姐还亲！平时都很关心我，还经常给我买衣服裤子，还有零食^_^我们都是吃货~~
+						我姐也会炒菜做饭哟！现在也在深圳那边和我哥一起，在那边的一个公司里边上班。
+					</p>
+					</div>
+					<div id="fan">
+						<a href="#fanhui">返回顶部</a>
+					</div>
+				</div><!--家人介绍结束-->
+				<div id="footer"><!--footer开始-->
+					重庆师范大学计算机与信息科学学院Copyright©2018级计科熊亮 版权所有<br />
+					Tel:15320520630 邮箱:2318751031@qq.com<br />
+					专注于网页制作，只为打造更好更美的网页！
+				</div><!--footer开始-->
+			</div><!--主体结束-->
+		</div><!--大容器结束-->
+	</body>
+</html>
