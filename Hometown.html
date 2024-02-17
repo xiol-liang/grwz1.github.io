@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My hometown</title>
+		<meta name="keywords" content="xiongliang,熊亮,个人网页,个人网站,熊亮的个人网页,计算机,做网站,web前端" />
+		<meta name="description" content="这是熊亮的个人网站，主要从事计算机行业，欢迎大家走进我的网站，在这里你将更加了解我" />
+		<!--
+                                                   	作者：2318751031@qq.com
+                                                   	时间：2018-12-19
+                                                   	描述：搜索引擎优化
+                                                   -->
+		<style type="text/css">
+			html,
+			body {/*body的整体设置*/
+				margin: 0px;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				font-family: arial;
+				background: rgb(217,215,190);
+			}
+
+			#container {
+				margin: 0 auto;
+				/*主要内容的大容器 居中*/
+				width: 1400px;
+				/*大容器宽度为1400px*/
+			}
+
+			#banner {
+				/*border:dashed 1px #FFFFFF;*/
+				width: 1400px;
+				height: 350px;
+				background: url(img/jia1.jpg);/*banner背景图片*/
+			}
+
+			#banner_1 {
+				/*border:dashed 1px #FFFFFF;*/
+				height: 50px;
+				width: 250px;
+				padding: 20px 0px 0px 30px;
+			}
+
+			#banner_1 a {
+				color: rgb(81, 77, 77);
+				font-family: 华文行楷;/*banner字体*/
+				font-size: 40px;
+				text-decoration: none;
+			}
+
+			#banner_1 a:hover {
+				color: rgb(243, 152, 57);
+			}
+
+			.img {
+				opacity: 0.6;/*让小图片透明*/
+			}
+
+			#caidan {
+				/*border: dashed 1px #FFFFFF;*/
+				height: 60px;
+				width: 850px;
+				font-size: 24px;
+				/*菜单栏中字体原来的大小*/
+				position: relative;
+				left: 630px;
+				top: -55px;
+			}
+
+			#caidan ul {
+				/*菜单栏采用无序列表方式设置*/
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#caidan li {
+				float: left;
+				/*让菜单栏中每一个元素左浮动*/
+				width: 170px;
+			}
+
+			#caidan li a {
+				/*菜单栏中每一个元素的设置*/
+				text-decoration: none;
+				/*border: 1px solid #FFFFFF;*/
+				margin: 0px;
+			}
+
+			#caidan li a:link,
+			#caidan li a:visited {
+				color: #07a690;
+				/*菜单栏的元素访问前和访问后的颜色*/
+			}
+
+			#caidan li a:hover {
+				/*鼠标移上菜单栏上时产生的效果设置*/
+				font-size: 28px;
+				color: rgb(35, 173, 229);
+				text-shadow: 0 0 10px chartreuse;
+			}
+
+			#huanying {
+				border: solid 3px rgb(163, 163, 162);
+				font-size: 60px;
+				color: rgb(90, 118, 174);
+				background: rgb(81, 77, 77);
+				text-shadow: 1px 1px #FFFFFF;
+			}
+
+			#zhuti {/*主体内容框架*/
+				/*border: dashed 2px #000000;*/
+				width: 1400px;
+				height: 1190px;
+				background: rgb(159,159,160);
+			}
+
+			#zhuti div {
+				float: left;
+			}
+
+			#left {/*左边内容设置*/
+				/*border: dashed 1px #000000;*/
+				width: 450px;
+				height: 1190px;
+			}
+
+			#tu {/*左边图片设置*/
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 613px;
+			}
+
+			#tu a:link,
+			#tu a:visited {
+				color: rgb(83, 74, 70);
+				font-size: 25px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+
+			#tu_ {
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 468px;
+				color: rgb(83, 74, 70);
+				font-size: 25px;
+				font-family: 华文行楷;
+			}
+
+			#fan {
+				border: groove 2px rgb(163, 163, 162);
+				width: 450px;
+				height: 70px;
+				padding-top:30px;
+				/*padding-bottom: 30px;*/
+			}
+			#fan a{
+				color: rgb(83, 74, 70);
+				font-size: 40px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+			#fan a:hover{
+				color: #ffffff;
+			}
+
+			#right {/*右边整体设置*/
+				border: groove 2px rgb(163, 163, 162);
+				width: 942px;
+				height: 1190px;
+				margin-left: 4px;
+				background: url('img/bei13.png') no-repeat;
+				background-color: rgba(255, 255, 255, 0.7);
+			}
+			#g1{
+				/*border: solid 3px #000000;*/
+				width: 940px;
+				height: 230px;
+			}
+			#g2{
+				/*border: solid 3px #000000;*/
+				width: 940px;
+				height: 270px;
+			}
+			#g3{
+				/*border: solid 3px #000000;*/
+				width: 940px;
+				height: 690px;
+			}
+
+			p {/*文章设置*/
+				/*border: dashed 1px #000000;*/
+				text-align: justify;
+				font-size: 35px;
+				color: rgb(163, 163, 162);
+			}
+
+			p:hover {
+				color: rgb(81, 77, 77);
+			}
+
+			p.content {
+				/*background-color:rgba(255,255,255,1);*/
+				line-height: 1.2em;
+				margin: 0px;
+				text-indent: 2em;
+				font-family: 华文行楷;
+				padding-top: 20px;
+			}
+
+			#right img {/*右边图片效果设置*/
+				border-radius: 25px;
+				box-shadow: 7px 7px 7px #333333;
+			}
+
+			img.pic1 {/*图片效果设置*/
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+
+			img.pic2 {/*图片效果设置*/
+				float: right;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+
+			#jia1 {
+				/*border: solid 1px #000000;*/
+				width: 940px;
+				height: auto;
+			}
+
+			#jia1 a {
+				text-decoration: none;
+			}
+			#footer{/*脚注设置*/
+				border: groove 2px rgb(163, 163, 162);
+				height: auto;
+				color: #000000;
+				font-size: 25px;
+				padding-top: 8px;
+				background: rgb(159,159,160);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container"><!--大容器开始-->
+			<a name="fanhui">
+				<div id="banner">
+					<div id="banner_1">
+						<a href="https://baike.baidu.com/item/%E5%BC%80%E5%B7%9E%E5%8C%BA/1463471?fr=aladdin">重庆市开州区</a>
+					</div>
+					<div id="caidan"><!--菜单栏开始-->
+						<ul>
+							<li>
+								<a href="index.html" target="_self"><img src="img/home.png" class="img" /><br>Home</a>
+							</li>
+							<li>
+								<a href="Hometown.html" target="_self" style="text-shadow:0 0 7px chartreuse"><img src="img/home.png" class="img" /><br>Hometown</a>
+							</li>
+							<li>
+								<a href="My family.html" target="_self"><img src="img/family.png" class="img" /><br>My family</a>
+							</li>
+							<li>
+								<a href="My school.html" target="_self"><img src="img/school.png" class="img" /><br>My school</a>
+							</li>
+						</ul>
+					</div><!--菜单栏结束-->
+
+				</div>
+			</a>
+			<div id="huanying">
+				welcome to my hometown
+			</div>
+			<div id="zhuti"><!--主体开始-->
+				<div id="left"><!--左边开始-->
+					<div id="tu">
+						<a href="https://baike.baidu.com/pic/%E5%BC%80%E5%B7%9E%E5%8C%BA/1463471/0/b90e7bec54e736d15496476393504fc2d46269d0?fr=lemma&ct=single"
+						 target="_blank"><img src="img/jia8.jpg" /><br />开州区图册</a>
+					</div>
+					<div id="tu_">
+						<img src="img/jia6.jpg" /><br />开州区地理位置
+					</div>
+					<div id="fan">
+						<a href="#fanhui">返回顶部</a>
+					</div>
+				</div><!--左边结束-->
+				<div id="right"><!--右边开始-->
+					<div id="jia1">
+						<div id="g1">
+						<a href="https://baike.baidu.com/item/%E5%BC%80%E5%B7%9E%E5%8C%BA/1463471?fr=aladdin">
+						<img src="img/jia3.jpg" class="pic2" />
+						<p class="content">无论身在何处，我都忘不了自己的家乡，她的美，她的轮廓一直深深烙印在我心里，她是我心灵的港湾！</p><br />
+						</a>
+						</div>
+						<div id="g2">
+						<a href="https://baike.baidu.com/item/%E5%88%98%E4%BC%AF%E6%89%BF">
+							<img src="img/jia5.jpg" class="pic1" />
+							<p class="content">我的家乡还有著名的刘伯承元帅纪念馆！他为中华民族的解放事业建立了不朽功勋，为我国的国防建设和社会主义建设事业作出了杰出贡献，对我军向正规化、现代化迈进作出了卓越的贡献。
+							</p><br />
+						</a>
+						</div>
+						<div id="g3">
+						<a href="https://baike.baidu.com/item/%E4%B8%B4%E6%B1%9F%E9%95%87/9150">
+							<img src="img/jia9.jpg" class="pic2" />
+							<p class="content">我的家乡位于开州区的西南部，是一个名副其实的千年古镇——临江镇，山清水秀，历史悠久，近几年发展的很快，有了很多高楼大厦拔地而起，还有众多特色产品，都是我作为开州临江人的骄傲！<img
+								 src="img/jia10.jpg" class="pic1" />其中最为出名的就是香绸扇和冰薄月饼了！临江镇的香绸扇传说可是十里飘香，老远就能闻到别人手里拿的扇子的香味，夏天热的时候扇一扇，神清气爽，心旷神怡。<img
+								 src="img/jia11.jpg" class="pic2" />再就是镇上出名的冰薄月饼了，香甜可口，每逢中秋季卖的最多的就是它了，听说经常还有其他地方的人专门跑来买呢！</p>
+						</a>
+						</div>
+
+					</div>
+				</div><!--右边结束-->
+			</div><!--主体结束-->
+			<div id="footer"><!--脚注开始-->
+				重庆师范大学计算机与信息科学学院Copyright©2018级计科熊亮 版权所有<br />
+				Tel:15320520630 邮箱:2318751031@qq.com<br />
+				专注于网页制作，只为打造更好更美的网页！
+			</div><!--脚注结束-->
+		</div><!--大容器结束-->
+	</body>
+</html>

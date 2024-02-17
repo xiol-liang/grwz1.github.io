@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My school</title>
+		<meta name="keywords" content="xiongliang,熊亮,个人网页,个人网站,熊亮的个人网页,计算机,做网站,web前端" />
+		<meta name="description" content="这是熊亮的个人网站，主要从事计算机行业，欢迎大家走进我的网站，在这里你将更加了解我" />
+		<!--
+                                                   	作者：2318751031@qq.com
+                                                   	时间：2018-12-19
+                                                   	描述：搜索引擎优化
+                                                   -->
+		<style type="text/css">
+			html,
+			body {
+				margin: 0px;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				font-family: arial;
+				background: rgb(135, 197, 237);
+			}
+
+			#container {
+				margin: 0 auto;/*主要内容的大容器 居中*/
+				width: 1400px;/*大容器宽度为1400px*/
+			}
+
+			#banner {/*border: dashed 1px #000000;*/
+				width: 1400px;
+				height: 300px;
+				background: #1256AD;
+			}
+
+			#banner div {
+				float: left;
+			}
+
+			#banner_ {
+				/*border: dashed 1px #FFFFFF;*/
+				height: 300px;
+				width: 1400px;
+			}
+
+			#banner_1 {
+				/*border: dashed 1px #FFFFFF;*/
+				padding: 60px 0px 0px 100px;
+				height: 75px;
+				width: 320px;
+			}
+
+			#banner_2 {
+				/*border: dashed 1px #FFFFFF;*/
+				/*padding: 75px 0px 10px 150px;*/
+				height: 50px;
+				width: 300px;
+				position: relative;
+				top: -100px;
+				left: -720px;
+			}
+
+			#banner_3 {
+				/*border: dashed 1px #FFFFFF;*/
+				height: 300px;
+				width: 300px;
+				background: rgb(17, 63, 172);
+				position: relative;
+				left: 675px;
+			}
+
+			#banner_4 {
+				border: dashed 1px #FFFFFF;
+				height: 80px;
+				width: 380px;
+				color: rgb(32, 129, 211);
+				font-size: 50px;
+				font-style: italic;
+				/*position: relative;
+				left: 105px;
+				top: 50px;*/
+			}
+
+			#banner_5 a:link,
+			#banner_5 a:visited {
+				color: rgb(32, 129, 211);
+				font-size: 50px;
+				font-style: italic;
+				text-decoration: none;
+			}
+
+			#banner_5 a:hover {
+				color: rgb(35, 173, 229);
+			}
+
+			#banner_5 {
+				/*border: dashed 1px #000000;*/
+				width: 1396px;
+				height: 64px;
+				background: #FFFFFF;
+				border: solid 2px #1256AD;
+			}
+
+			.img {
+				opacity: 0.3;
+			}
+
+			#navigation {
+				/*菜单栏容器的设置*/
+				/*border: dashed 1px #000000;*/
+				height: 60px;
+				width: 850px;
+				font-size: 24px;
+				position: relative;
+				left: 480px;
+				top: -290px;
+			}
+
+			#navigation ul {
+				/*菜单栏采用无序列表方式设置*/
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#navigation li {
+				float: left;
+				/*让菜单栏中每一个元素左浮动*/
+				/*border: dashed 1px #FFFFFF;*/
+				width: 170px;
+			}
+
+			#navigation li a {
+				/*菜单栏中每一个元素的设置*/
+				text-decoration: none;
+				/*border: 1px solid #FFFFFF;*/
+				margin: 0px;
+			}
+
+			#navigation li a:link,
+			#navigation li a:visited {
+				color: #ffffff;
+				/*菜单栏的元素访问前和访问后的颜色*/
+			}
+
+			#navigation li a:hover {
+				/*鼠标移上菜单栏上时产生的效果设置*/
+				font-size: 28px;
+				color: rgb(32, 129, 211);
+				text-shadow: 0 0 8px rgb(35, 173, 229);
+			}
+
+			#banner_6 {
+				/*border: dashed 1px #000000;*/
+				width: 1400px;
+				height: 256px;
+				background: url('img/cs1.jpg');
+			}
+
+			#zhuti {
+				border: solid 2px #1256AD;
+				height: auto;
+				width: 1396px;
+				background: rgb(105, 162, 216);
+			}
+
+			#top {
+				/*border: dashed 1px #000000;*/
+				height: auto;
+				width: 1394px;
+			}
+
+			#top_1 {
+				/*margin-top: 0px;*/
+				width: 1396px;
+				height: 70px;
+				background: #1256AD;
+				color: rgb(35, 173, 229);
+				font-size: 55px;
+				font-style: italic;
+				text-shadow: 2px 2px #FFFFFF;
+				letter-spacing: 40px;
+			}
+
+			#top_2 {
+				/*border: dashed 1px #000000;*/
+				width: 1394px;
+				height: 382px;
+			}
+
+			#top_2 p {
+				color: #1256AD;
+				font-size: 40px;
+				text-shadow: 2px 2px #FFFFFF;
+				letter-spacing: 12px;
+			}
+
+			h {
+				color: #1256AD;
+				font-size: 40px;
+				text-shadow: 2px 2px #FFFFFF;
+				letter-spacing: 12px;
+			}
+
+			z {
+				color: #1256AD;
+				font-size: 30px;
+				text-shadow: 2px 2px #FFFFFF;
+			}
+
+			#top_2 div {
+				float: left;
+				margin-right: 15px;
+				margin-left: 5px;
+				margin-top: 5px;
+			}
+
+			#top_2 img {
+				border: solid #FFFFFF 5px;
+				border-radius: 35px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 0.8;
+			}
+
+			#top_2 img:hover {
+				border: solid rgb(233, 203, 153) 5px;
+				border-radius: 0px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 1;
+			}
+
+			#top_3 {
+				/*border: dashed 1px #000000;*/
+				width: 1394px;
+				height: 300px;
+			}
+
+			#top_3 div {
+				float: left;
+				margin-right: 15px;
+				margin-left: 5px;
+				margin-top: 5px;
+			}
+
+			#top_3 img {
+				border: solid #FFFFFF 5px;
+				border-radius: 35px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 0.8;
+			}
+
+			#top_3 img:hover {
+				border: solid rgb(233, 203, 153) 5px;
+				border-radius: 0px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 1;
+			}
+
+			#top_4 {
+				/*border: dashed 1px #000000;*/
+				width: 1394px;
+				height: 336px;
+			}
+
+			#top_4 div {
+				float: left;
+				margin-right: 15px;
+				margin-left: 5px;
+				margin-top: 5px;
+			}
+
+			#top_4 img {
+				border: solid #FFFFFF 5px;
+				border-radius: 35px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 0.8;
+			}
+
+			#top_4 img:hover {
+				border: solid rgb(233, 203, 153) 5px;
+				border-radius: 0px;
+				box-shadow: 7px 7px 7px #333333;
+				opacity: 1;
+			}
+
+			#tushu1 {
+				width: 250px;
+				height: 349px;
+			}
+
+			#tushu2 {
+				width: 325px;
+				height: 349px;
+			}
+
+			#yi1 {
+				width: 287px;
+				height: 349px;
+			}
+
+			#yi2 {
+				width: 450px;
+				height: 349px;
+			}
+
+			#er_1 {
+				/*border: solid 2px #000000;*/
+				width: 35px;
+				height: 200px;
+				padding-top: 70px;
+				padding-left: 50px;
+			}
+
+			#er_3 {
+				/*border: solid 2px #000000;*/
+				width: 35px;
+				height: 190px;
+				padding-top: 80px;
+				padding-right: 40px;
+			}
+
+			#san2 {
+				/*border: solid 1px #000000;*/
+				height: 325px;
+				width: 502px;
+			}
+
+
+			#san_1 {
+				/*border: solid 2px #000000;*/
+				width: 40px;
+				height: 190px;
+				padding-top: 60px;
+			}
+
+			#san_3 {
+				/*border: solid 2px #000000;*/
+				width: 40px;
+				height: 190px;
+				padding-top: 80px;
+			}
+
+			#jian {
+				height: auto;
+				width: 1394px;
+			}
+
+			#jian_ {
+				/*border: dashed 1px #000000;*/
+				height: auto;
+				width: 1394px;
+			}
+
+			#jian_ img {
+				border-radius: 25px;
+				box-shadow: 7px 7px 7px #333333;
+			}
+
+			#jian_1 {
+				width: 1396px;
+				height: 70px;
+				background: #1256AD;
+				color: rgb(35, 173, 229);
+				font-size: 55px;
+				font-style: italic;
+				text-shadow: 2px 2px #FFFFFF;
+				letter-spacing: 40px;
+			}
+
+			#cen {
+				/*border: dashed 1px #000000;*/
+				height: auto;
+				width: 1394px;
+			}
+
+			#cen_1 {
+				width: 1396px;
+				height: 70px;
+				background: #1256AD;
+				color: rgb(35, 173, 229);
+				font-size: 55px;
+				font-style: italic;
+				text-shadow: 2px 2px #FFFFFF;
+				letter-spacing: 40px;
+			}
+
+			#cen_ {
+				/*border: dashed 1px #000000;*/
+				height: auto;
+				width: 1394px;
+			}
+
+			p {
+				/*border: dashed 1px #000000;*/
+				text-align: justify;
+				font-size: 35px;
+				color: rgb(81, 77, 77);
+			}
+
+			p:hover {
+				color: #000000;
+			}
+
+			p.content {
+				/*background-color:rgba(255,255,255,1);*/
+				line-height: 1.2em;
+				margin: 0px;
+				text-indent: 2em;
+				font-family: 楷体;
+				padding-top: 20px;
+			}
+
+			#cen_ img {
+				border-radius: 25px;
+				box-shadow: 7px 7px 7px #333333;
+			}
+
+			img.pic1 {
+				float: left;
+				margin: 5px 10px 5px 10px;
+			}
+
+			img.pic2 {
+				float: right;
+				margin: 5px 10px 5px 10px;
+			}
+
+			#cen_2 {
+				margin: 5px 10px 5px 10px;
+				border-radius: 25px;
+				box-shadow: 7px 7px 7px #333333;
+				height: 413px;
+				width: 550px;
+				background: url('img/cs14.jpg');
+				float: left;
+			}
+
+			#cen_2 img {
+				border-radius: 10px;
+				box-shadow: 0px 0px 0px #333333;
+				margin-top: 50px;
+			}
+
+			#fan {
+				border: solid 2px #1256AD;
+				height: auto;
+				background: rgb(105, 162, 216);
+			}
+
+			#fan a {
+				color: #000000;
+				font-size: 40px;
+				font-family: 楷体;
+				text-decoration: none;
+			}
+			#fan a:hover{
+				color: #ffffff;
+			}
+
+			#footer {
+				border: solid 2px #1256AD;
+				height: auto;
+				color: #FFFFFF;
+				font-size: 25px;
+				padding-top: 8px;
+				background: #1256AD;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<a name="fanhui">
+				<div id="banner">
+					<div id="banner_">
+						<div id="banner_1">
+							<a href="http://www.cqnu.edu.cn/">
+								<img src="img/xiao1.png">
+							</a>
+						</div>
+						<div id="banner_3">
+							<img src="img/xiao3.png" style="opacity: 0.1;">
+						</div>
+						<div id="navigation">
+							<!--菜单栏开始-->
+							<ul>
+								<li>
+									<a href="index.html" target="_self"><img src="img/home.png" class="img" /><br>Home</a>
+								</li>
+								<li>
+									<a href="Hometown.html" target="_self"><img src="img/home.png" class="img" /><br>Hometown</a>
+								</li>
+								<li>
+									<a href="My family.html" target="_self"><img src="img/family.png" class="img" /><br>My family</a>
+								</li>
+								<li>
+									<a href="My school.html" target="_self" style="color:rgb(32, 129, 211)"><img src="img/school.png" class="img" /><br>My
+										school</a>
+								</li>
+								<li>
+									<a href="My girl.html" target="_self"><img src="img/me.png" class="img" /><br>My girl</a>
+								</li>
+							</ul>
+						</div>
+						<!--菜单栏结束-->
+						<div id="banner_2">
+							<img src="img/xiao2.png">
+						</div>
+					</div>
+				</div>
+			</a>
+			<div id="banner_5">
+				
+					<a href="http://www.cqnu.edu.cn/">My university</a>
+				
+			</div>
+			<div id="banner_6">
+
+			</div>
+			<div id="zhuti">
+				<div id="top">
+					<div id="top_1">
+						重师风光展
+					</div>
+					<div id="top_2">
+						<div id="tushu1">
+							<img src="img/cs4.jpg">
+						</div>
+						<div id="tushu2">
+							<img src="img/cs2.jpg">
+							<p>图书馆</p>
+						</div>
+						<div id="yi1">
+							<img src="img/cs5.jpg">
+							<p>三春湖</p>
+						</div>
+						<div id="yi2">
+							<img src="img/cs9.jpg">
+							<h>体育馆</h>
+						</div>
+					</div>
+					<div id="top_3">
+						<div>
+							<img src="img/cs7.jpg">
+						</div>
+						<div id="er_3">
+							<z>情人坡</z>
+						</div>
+						<div>
+							<a href="http://www.cqnu.edu.cn/xxgl/xhxg.htm">
+								<img src="img/xiao3_1.png" style="border-radius: 110px;">
+							</a>
+						</div>
+						<div id="er_1">
+							<z>校友会堂</z>
+						</div>
+						<div>
+							<img src="img/cs10.jpg" style="padding-left: 0px">
+						</div>
+					</div>
+					<div id="top_4">
+						<div>
+							<img src="img/cs8.jpg">
+						</div>
+						<div id="san_1">
+							<z>博望亭</z>
+						</div>
+						<div id="san2">
+							<h>泛月桥</h><br />
+							<img src="img/cs3.jpg">
+						</div>
+						<div id="san_3">
+							<z>廊桥</z>
+						</div>
+						<div>
+							<img src="img/cs6.jpg">
+						</div>
+					</div>
+				</div>
+				<div id="jian">
+					<div id="jian_1">
+						重师简介
+					</div>
+					<div id="jian_">
+						<img src="img/cs12.jpg" class="pic1">
+						<p class="content">
+							重庆师范大学（Chongqing Normal
+							University），简称“重庆师大”，位于中国直辖市重庆，入选国家首批卓越农林人才教育培养计划和卓越教师培养计划，“马云乡村师范生计划”首批合作院校，是一所以教师教育为特色、多学科协调发展的综合性师范大学。</p><br />
+						<p class="content">重庆师范大学创办于1954年1月，时名重庆师范专科学校；1960年学校更名为重庆师范学院，同年获得本科专业设置资格；1962年复名为重庆师范专科学校，同时成都师范专科学校并入；1978年再次更名为重庆师范学院。1981年获得学士学位授予权；1986年获得硕士学位授予权。<img
+							 src="img/cs16.jpg" class="pic2">2001年5月，重庆幼儿师范学校、重庆纺织职工大学并入。2003年，学校改为现名；同年9月，重庆市第一师范学校并入。据2018年12月学校官网信息显示，重庆师范大学建有大学城校区、沙坪坝校区和北碚校区，校园总面积2688亩，教学科研仪器设备总值2.233亿元；馆藏纸质图书270余万册、电子图书104万种；下设17个二级学院、1个独立二级学院、70个全日制本科专业（含方向）；全日制本科生25500余人、研究生3600余人，专任教师1600余人。
+						</p>
+					</div>
+				</div>
+				<div id="cen">
+					<div id="cen_1">
+						我与重师
+					</div>
+					<div id="cen_">
+						<div id="cen_2">
+							<img src="img/cs15.jpg">
+						</div>
+						<p class="content">
+							2018年8月18日,我随着家人第一次踏进重师大门,拿着录取通知书的我知道自己也将是重师的一份子别提有多高兴了,从此开始了我的大学生活!我的梦想也从这里开始!自己的专业是计算机科学与技术,也非常合我的口味,所以我决定在大学里面一定要努力学习知识,不能浪费时间精力还有老爸赚的血汗钱,这样将来有了出息才好报答父母的养育之恩!每当看见室友或者同学们玩游戏,我都尽力克制住自己,转移注意力,专心学习,因为我知道其实大学并不轻松,大学才是人生最重要的转折点!
+						</p>
+						<img src="img/zj1.jpg" class="pic2" />
+						<p class="content">当然啦，我也不是只会学习的书呆子，平时在学校除了体育课，只要有空余的时间我都会去操场锻炼身体的，比较擅长球类运动，像乒乓球，<img src="img/zj2.jpg" class="pic1">羽毛球还有篮球也会一点点^_^我体育课的期末成绩可是拿了85的高分!这可是我身体素质好的体现，我觉得就是要把学习或者工作和运动结合起来才能提高我们的效率</p>
+					</div>
+				</div>
+			</div>
+			<div id="fan">
+				<a href="#fanhui">返回顶部</a>
+			</div>
+			<div id="footer">
+				重庆师范大学计算机与信息科学学院Copyright©2018级计科熊亮 版权所有<br />
+				Tel:15320520630 邮箱:2318751031@qq.com<br />
+				专注于网页制作，只为打造更好更美的网页！
+			</div>
+		</div>
+	</body>
+</html>
